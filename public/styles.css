@@ -1,0 +1,48 @@
+
+/* Structure */
+h1{
+  color: black; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(116, 174, 201);
+}
+
+
+/* Typography */
+body {
+  justify-content: center;
+  text-align: center ;
+}
+
+.family-member {
+  max-width: 300px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(26, 107, 144);
+  color: white;
+}
+
+
+#family-list {
+  justify-content: center; 
+  margin: 0 auto; 
+  max-width: 375px; 
+}
+
+ /* Larger Resolutions */
+@media only screen and (min-width: 900px) {
+  .family-member {
+    flex: 1;
+  }
+
+   #family-list{
+      flex: 1;
+    }
+
+}
+ 
