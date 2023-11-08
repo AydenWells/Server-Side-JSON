@@ -20,13 +20,13 @@ const showFamilyMembers = async () => {
 
        let  img = document.createElement("img"); 
        section.append(img);
-       img.src = "http://localhost:3000" + family.img;
+       img.src =  + family.img;
     });
 };
 
 const getJSON = async () => {
     try{
-        let response = await fetch("http://localhost:3000/api/members");
+        let response = await fetch("/api/members");
         return await response.json();
     } catch(error){
         console.log("error retrieving json");
